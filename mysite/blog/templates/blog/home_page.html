@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{%extends "blog/base.html"%}
+{% block content%}
+     <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+<!--            DESCRIPTION OF THE HOME PAGE -->
+          <h1 class="display-4 font-italic">Coffee is everything for us!</h1>
+          <p class="lead my-3">Welcome to a coffee blog! Here you will find coffee blogs from the internet, but all gathered together!. If you are also passionate coffee lover from all over the world, you are welcome! In addition, you can learn more about any type of coffee here. In this coffee blogs you will find expertise and love for coffee. Join coffee lovers community!</p>
+<!--          INSERT ABOUT PAGE OR LIST OF POSTS-->
+            <p class="lead mb-0"><a href="{% url 'posts:about'%}" class="text-white font-weight-bold">Continue reading...</a></p>
+        </div>
+      </div>
+{% endblock %}
